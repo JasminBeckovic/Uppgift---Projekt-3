@@ -56,7 +56,8 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 300px;
+  height: 300px;
 }
 
 body {
@@ -445,6 +446,41 @@ li {
 }
 .social__link {
   color: var(--color-light);
+}
+
+.contact {
+  background-color: var(--color-light);
+  height: 100vh;
+  padding: 32px;
+  display: grid;
+}
+.contact__inner {
+  background-color: var(--color-accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact__inner--inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact__profile--1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 5rem;
+}
+.contact__profile--2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

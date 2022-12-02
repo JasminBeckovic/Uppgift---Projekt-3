@@ -1,0 +1,46 @@
+.contact {
+    background-color: var(--color-light);
+    height: 100vh;
+    padding: 32px;
+    display: grid;
+
+    &__inner {
+        background-color: var(--color-accent);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        &--inner {
+            display: flex;
+            justify-content: space-between;
+            //background-color: rgb(255, 123, 0);
+        }
+
+
+
+    }
+
+}
+
+.contact__profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    &--1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 5rem;
+    }
+
+    &--2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 5rem;
+        
+    }
+
+}
