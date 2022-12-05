@@ -1,21 +1,65 @@
 .contact {
-    background-color: var(--color-light);
-    height: 100vh;
+    //background-color: var(--color-light);
     padding: 32px;
-    display: grid;
+    display: flex;
 
     &__inner {
         background-color: var(--color-accent);
         display: flex;
         justify-content: center;
-        align-items: center;
+        min-width: 100%;
+        padding: var(--gap-l) 0;
+
+        
     
         &--inner {
-            display: flex;
-            justify-content: space-between;
-            //background-color: rgb(255, 123, 0);
+            width: 100%;
+            max-width: 85rem;
+            border-top: 1px solid #3F3A10;
+            padding: var(--gap-l) 0;
+
+            border-bottom: 1px solid #3F3A10;
+            
+
         }
 
+    }
+
+    &__image-1 {
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: #3F3A10;
+            opacity: 0.34;
+        }
+
+        img {
+            display: block;
+        }
+
+    }
+
+    &__image-2 {
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: #3F3A10;
+            opacity: 0.34;
+        }
+
+        img {
+            display: block;
+        }
 
 
     }
@@ -24,23 +68,36 @@
 
 .contact__profile {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    //width: 1270px;
+    justify-content: space-between;
+    
+
 
 
     &--1 {
         display: flex;
-        justify-content: space-around;
         align-items: center;
-        margin-left: 5rem;
     }
 
     &--2 {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        margin-right: 5rem;
-        
     }
 
 }
+
+.bjorn {
+    margin: 4rem;
+    font-family: var(--font-serif);
+    color: #707070;
+}
+
+.gustaf {
+    margin: 4rem;
+    font-family: var(--font-serif);
+    color: #707070;
+}
+
+

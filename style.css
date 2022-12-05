@@ -56,8 +56,8 @@ body {
 }
 
 img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 
 body {
@@ -67,6 +67,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
   font-weight: 400;
+}
+
+h3 {
+  font-weight: 700;
 }
 
 p {
@@ -79,7 +83,7 @@ a {
   line-height: var(--line-height);
 }
 a:hover {
-  color: var(--color-accent);
+  color: #707070;
 }
 
 li {
@@ -449,38 +453,81 @@ li {
 }
 
 .contact {
-  background-color: var(--color-light);
-  height: 100vh;
   padding: 32px;
-  display: grid;
+  display: flex;
 }
 .contact__inner {
   background-color: var(--color-accent);
   display: flex;
   justify-content: center;
-  align-items: center;
+  min-width: 100%;
+  padding: var(--gap-l) 0;
 }
 .contact__inner--inner {
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  max-width: 85rem;
+  border-top: 1px solid #3F3A10;
+  padding: var(--gap-l) 0;
+  border-bottom: 1px solid #3F3A10;
+}
+.contact__image-1 {
+  position: relative;
+}
+.contact__image-1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #3F3A10;
+  opacity: 0.34;
+}
+.contact__image-1 img {
+  display: block;
+}
+.contact__image-2 {
+  position: relative;
+}
+.contact__image-2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #3F3A10;
+  opacity: 0.34;
+}
+.contact__image-2 img {
+  display: block;
 }
 
 .contact__profile {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
 .contact__profile--1 {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  margin-left: 5rem;
 }
 .contact__profile--2 {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-right: 5rem;
+}
+
+.bjorn {
+  margin: 4rem;
+  font-family: var(--font-serif);
+  color: #707070;
+}
+
+.gustaf {
+  margin: 4rem;
+  font-family: var(--font-serif);
+  color: #707070;
 }
 
 /*# sourceMappingURL=style.css.map */
