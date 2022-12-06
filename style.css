@@ -456,6 +456,11 @@ li {
   padding: 32px;
   display: flex;
 }
+@media screen and (max-width: 62.5rem) {
+  .contact {
+    padding: 16px;
+  }
+}
 .contact__inner {
   background-color: var(--color-accent);
   display: flex;
@@ -466,9 +471,15 @@ li {
 .contact__inner--inner {
   width: 100%;
   max-width: 85rem;
-  border-top: 1px solid #3F3A10;
+  border-top: 1px solid rgba(63, 58, 16, 0.34);
   padding: var(--gap-l) 0;
-  border-bottom: 1px solid #3F3A10;
+  margin: 0 var(--gap-m);
+  border-bottom: 1px solid rgba(63, 58, 16, 0.34);
+}
+@media screen and (max-width: 30rem) {
+  .contact__inner--inner {
+    padding-top: 1rem;
+  }
 }
 .contact__image-1 {
   position: relative;
@@ -502,32 +513,56 @@ li {
 .contact__image-2 img {
   display: block;
 }
+.contact__header {
+  color: #3F3A10;
+}
+@media screen and (max-width: 30rem) {
+  .contact__header {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+}
 
 .contact__profile {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 30rem) {
+  .contact__profile {
+    justify-content: center;
+  }
 }
 .contact__profile--1 {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 30rem) {
+  .contact__profile--1 {
+    flex-direction: column;
+  }
+}
 .contact__profile--2 {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 30rem) {
+  .contact__profile--2 {
+    flex-direction: column;
+  }
+}
 
-.bjorn {
+.bjorn, .gustaf {
   margin: 4rem;
   font-family: var(--font-serif);
   color: #707070;
 }
-
-.gustaf {
-  margin: 4rem;
-  font-family: var(--font-serif);
-  color: #707070;
+@media screen and (max-width: 30rem) {
+  .bjorn, .gustaf {
+    margin: 1rem 1rem 4rem 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
